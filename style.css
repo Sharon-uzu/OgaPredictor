@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fffef6;
+    /* background-color:#1972f5; */
+  overflow-x: hidden;
+
+}
+
+header {
+    width: 100%;
+    /* height: 100vh; */
+    overflow-x: hidden;
+    background-color: #E1E4EC;
+    border: 0;
+    /* box-shadow: 2px 1px 27px rgb(223, 218, 218); */
+
+
+}
+
+header .top {
+    /* height: 150vh; */
+    /* background-color:  #f7f6f1; */
+    background-color: rgb(255, 253, 242);
+    position: relative;
+    /* background: linear-gradient(180deg, rgba(255, 253, 242) 46.47%, rgba(53, 72, 139, 0.5) 100%); */
+}
+
+
+/* NAV BAR */
+
+.heading {
+    /* position: sticky;
+    top: 0;
+    right: 0;
+    width: 100%;
+     */
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    /* z-index: 100000;
+    height: 18%; */
+}
+
+
+nav {
+
+
+    z-index: 9;
+    border-bottom: 1px solid rgba(0, 0, 0, 8%);
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    width: 100%;
+    display: flex;
+}
+
+nav .second-logo {
+    display: flex;
+    width: 50%;
+    position: relative;
+
+}
+
+.second-logo img {
+    position: absolute;
+    left: 14%;
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+nav .navbar {
+    display: flex;
+    width: 50%;
+
+}
+
+nav .nav ul {
+    display: flex;
+
+}
+
+nav li {
+    justify-content: space-between;
+    margin-left: 35px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0;
+    line-height: 80px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-style: inherit;
+    color: #0a0a0a;
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 99;
+    opacity: .85;
+    /* transition: all .5s ease-in-out; */
+    text-transform: uppercase;
+
+}
+
+nav img {
+    position: absolute;
+    right: 2%;
+    top: 20%;
+}
+
+.icon img {
+    width: 2.5%;
+    margin-top: 60px;
+    margin: auto;
+}
+#menu{
+    display: none;
+}
+#close{
+    display: none;
+}
+
+/* LANDING PAGE */
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    
+}
+.landing-page {
+    width: 100%;
+    display: flex;
+    margin-top: 20%;
+    /* overflow-x: hidden; */
+    background-color: white;
+  
+}
+.landing-page .left-text {
+    width: 50%;
+    background-color: white;
+    margin: auto;
+}
+.landing-page .left-text p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.landing-page .left-text a {
+    text-decoration: none;
+    font-size: 18px;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    border: 2px solid lightseagreen;
+    background-color: lightseagreen;
+    border-radius: 4px;
+    padding: 8px 5px;
+}
+
+.landing-page .left-text a:hover {
+    border: 4px solid lightseagreen;
+}
+
+.landing-page .right-text {
+    width: 40%;
+    margin-top: -170px;
+   
+}
+
+.right-text img{
+    width: 100%;
+}
+
+
+/* featurs */
+
+.featurs {
+    /* box-shadow: 0px 2px 4px inset red;
+    height: 250px; */
+    padding-top:  30px;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -270px;
+    /* padding-top: 80px; */
+    
+}
+
+.cards {
+    height: 180px;
+    width: 200px;
+    box-shadow: 2px 2px 4px grey;
+    display: inline-flex;
+   margin-left: -.2rem;
+    border-radius: 8px;
+     background: linear-gradient(180deg, rgba(60, 83, 153, 0.15) 46.47%, rgba(53, 72, 139, 0.5) 100%); 
+    
+}
+
+
+
+
+
+/* bookmaking section */
+
+.bookmaking {
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    /* position: relative; */
+    /* background-color: rgb(131, 25, 25); */
+    
+    margin-top: 10px;
+    
+}
+
+.bookmaking-content {
+    /* width: 100%; */
+    margin: auto;
+    display: flex;
+    /* margin-left: 70px; */
+    align-items: center;
+}
+
+.bookmaking .bookmaking-content .left-image {
+    width: 50%;
+   margin: auto;
+}
+
+.bookmaking-content .left-image img {
+    width: 80%;
+    height: 42%;
+    object-fit: cover;
+}
+
+.bookmaking-content .right-text {
+    width: 50%;
+   margin: auto;
+}
+.bookmaking-content .right-text p{
+    font-size: 25px;
+}
+.bookmaking-content .right-text h3{
+    color: #5e5e5e;
+}
+
+.bookmaking-content .right-text h2 {
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.bookmaking-content .right-text h4 {
+    font-size: 18px;
+    padding-bottom: 20px; 
+}
+
+.bookmaking-content .right-text p {
+    color: #545454;
+    font-size: 12.5px;
+    padding-bottom: 8px;
+}
+
+.bookmaking-content .right-text a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid #1972f5;
+    border-radius: 4px;
+    padding: 7px 25px;
+    background-color: #1972f5;
+}
+
+.bookmaking-content .right-text a:hover {
+    border: 4px solid #1972f5;
+}
+
+/* QOURSE */
+.quorse {
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+    background-color: rgb(255, 253, 242);
+    margin-top: 20px;
+}
+
+.quorse .content {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding-top: 30px;
+    margin-top: -5%;
+}
+
+
+.content .image {
+    width: 40%;
+   margin: auto;
+
+}
+.content .text{
+    width: 45%;
+    margin: auto;
+   
+}
+.content .text p{
+    font-size: 30px;
+}
+
+.content .image img {
+    width: 100%;
+    margin: auto;
+    /* align-items: center; */
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.content .text h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.content .text h4 {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.content .text p {
+    font-size: 13px;
+    color: #545454;
+    padding-bottom: 9px;
+}
+
+.content .text a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #1972f5;
+    background-color: #1972f5;
+    padding: 7px 25px;
+    border-radius: 4px;
+}
+
+.content .text a:hover {
+    border: 4px solid #1972f5;
+}
+
+/* ten year */
+.tenyears {
+    width: 100%;
+    margin: auto;
+    height: 570px;
+    position: relative;
+    background-color: #F2F4FB;
+    
+    
+}
+
+.tenyears .tenyears-content {
+    width: 94%;
+    margin: auto;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* position: relative; */
+    
+}
+.tenyears-content .left-text-holder {
+    width: 50%;
+    
+} 
+
+.tenyears-content .righttext-holder {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.tenyears-content .righttext-holder .firstrow {
+    width: 100%;
+    display: flex;
+}
+
+.righttext-holder .firstrow .firsttext {
+    width: 50%;
+}
+.righttext-holder .firstrow .secondtext {
+    width: 50%;
+}
+
+.tenyears-content .righttext-holder .secondrow {
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+}
+
+.righttext-holder .secondrow .firsttext {
+    width: 50%;
+}
+
+.righttext-holder .secondrow .secondtext {
+    width: 50%;
+}
+.tenyears-content h6 {
+    font-size: 20px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.tenyears-content h3 {
+    font-size: 40px;
+    padding-bottom: 8px;
+    font-weight: 500;
+}
+
+.tenyears-content h4 {
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+
+.tenyears-content p {
+    font-size: 14px;
+    color: #545454;
+    padding-bottom: 4px;
+}
+
+.tenyears-content a {
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+
+
+/* footer */
+
+
+.new-footer{
+    text-align: center;
+    /* padding: 20px; */
+    /* display: none; */
+    /* background-color: #0a0a0a; */
+}
+
+.new-footer input{
+    padding:10px 20px;
+    border-radius: 7px;
+    width: 30%;
+    border: 0.5px solid lightgrey;
+    outline: none;
+}
+
+.new-footer button{
+    padding: 10px  ;
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+
+    

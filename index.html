@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OgaPredictor.com</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" /> 
+    <link rel="stylesheet" href="responsive.css">
+    
+    <script>
+      // alert("")
+      const [red, green, blue] = [255, 253, 242];
+
+      window.addEventListener("scroll", () => {
+        let y = 1 + (window.scrollY || window.pageYOffset) / 15;
+        y = y < 1 ? 1 : y;
+        const [r, g, b] = [red + y, green + y, blue + y].map(Math.round);
+        console.log(y);
+        document.getElementById(
+          "nav"
+        ).style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+      });
+    </script>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header>
+      <section class="top" id="top">
+        <div
+          class="heading"
+          id="header"
+        >
+          <nav id="nav" >
+            <div class="second-logo">
+              <img src="./images/fulllpgp.png" alt="icon" />
+            </div>
+            <div class="navbar" id="navbar">
+              <div class="nav" id="link">
+                <ul >
+                  <li>
+                    <a href="" style="border-bottom: 2px solid rgb(41, 41, 212)"
+                      >HOME</a
+                    >
+                  </li>
+                  <li><a href="">THEMES</a></li>
+                  <li><a href="">SUPPORT</a></li>
+                  <li><a href=""> ABOUT</a></li>
+                </ul>
+              </div>
+              <div class="icon">
+                <img
+                  src="./images/icon-human-icon-with-png-removebg-preview.png"
+                  alt="icon"
+                />
+              </div>
+            </div>
+           <img src="./image/Hamburger Menu.svg" alt="" id="menu">
+           <img src="./image/close-icon.webp" alt="" id="close">
+          </nav>
+        </div>
+    </header>
+   <section class="leagues"  style="display:none;">
+        <div style="margin-top: 5px; text-align: center; display: none">
+          <div
+            class="cards leagues"
+            style="
+              background: linear-gradient(
+                180deg,
+                rgba(60, 83, 153, 0.15) 0%,
+                rgba(97, 102, 18, 0.15) 46.47%,
+                rgba(53, 72, 139, 0.5) 100%
+              );
+            "
+          >
+            <!-- Creat Account -->
+             <img alt="logo" class="stakes2" src="./images/logo.png" />
+            <div class="stakes_price">
+              <br /><br />
+              <b class="icon" style="color: #4e7a97">Creat Account</b> <br />
+              <small class="matches_count">Active || matches</small>
+            </div>
+          </div>
+          <div
+            class="cards leagues"
+            style="
+              background: linear-gradient(
+                180deg,
+                rgba(60, 83, 153, 0.15) 0%,
+                rgba(97, 162, 68, 0.15) 46.47%,
+                rgba(0, 0, 0, 0.8) 100%
+              );
+            "
+          > 
+            <!-- Get free 1,000 -->
+             <img alt="logo" class="stakes2" src="./images/logo.png" />
+            <div class="stakes_price">
+              <br /><br />
+              <b class="icon" style="color: #4e7a97">Get free 1,000</b> <br />
+              <small class="matches_count">Active || matches</small>
+            </div>
+          </div>
+          <div
+            class="cards leagues"
+            style="
+              background: linear-gradient(
+                180deg,
+                rgba(60, 83, 153, 0.15) 0%,
+                rgba(97, 162, 68, 0.15) 46.47%,
+                rgba(217, 44, 44, 0.6) 100%
+              );
+            "
+          > 
+            <!-- Select Class -->
+             <img alt="logo" class="stakes2" src="./images/logo.png" />
+            <div class="stakes_price">
+              <br /><br />
+              <b class="icon" style="color: #4e7a97">Select Class</b> <br />
+              <small class="matches_count">Active || matches</small>
+            </div>
+          </div>
+          <div
+            class="cards leagues"
+            style="
+              background: linear-gradient(
+                180deg,
+                rgba(60, 83, 153, 0.15) 0%,
+                rgba(97, 162, 68, 0.15) 46.47%,
+                rgba(151, 151, 78, 0.9) 100%
+              );
+            "
+          > 
+            <!-- Select Category -->
+             <img alt="logo" class="stakes2" src="./images/logo.png" />
+            <div class="stakes_price">
+              <br /><br />
+              <b class="icon" style="color: #4e7a97">Select Category</b> <br />
+              <small class="matches_count">Active || matches</small>
+            </div>
+          </div>
+          <div
+            class="cards leagues"
+            style="
+              background: linear-gradient(
+                180deg,
+                rgba(60, 83, 153, 0.15) 0%,
+                rgba(97, 162, 68, 0.15) 46.47%,
+                rgba(87, 151, 78, 0.8) 100%
+              );
+            "
+          > 
+            <!-- Predict All matches -->
+            <img alt="logo" class="stakes2" src="./images/logo.png" />
+            <div class="stakes_price">
+              <br /><br />
+              <b class="icon" style="color: #4e7a97">Predict All matches</b>
+              <br />
+              <small class="matches_count">Active || matches</small>
+            </div>
+          </div>
+        </div>
+    </section>
+     
+
+    <!-- hero -->
+
+    <section class="hero">
+      <div class="landing-page">
+        <div class="left-text">
+          
+          <h1>WE KNOW WHAT IT MEANS TO MAKE MONEY  FROM WHAT YOU LOVE DOING.</h1>
+          <br />
+          <p>
+            With <b>OgaPredictor,</b>you can monetize your football predicting
+            <br />
+            <b>skill</b>.
+          </p>
+          <!-- <a href=""> WordPress Themes</a> -->
+          <div class="download-btns">
+            <!-- <img
+              src="./images/appstore.png"
+              alt=""
+              srcset=""
+              style="width: 170px"
+            />
+            <img
+              src="./images/playstore2.jpg"
+              alt=""
+              srcset=""
+              style="width: 170px"
+            /> -->
+            <a
+            href="./images/base.apk" 
+            download
+            rel="noopener noreferrer" 
+          >
+            Download Mobile App
+          </a>
+        </div>
+        </div>
+        <div class="right-text">
+          <img src="./images/slide2.png" alt="" />
+          <!-- ./images/ogapredictor.gif -->
+        </div>
+      </div>
+    </section>
+
+    <!-- featurs -->
+    <section
+      style="
+        background: linear-gradient(
+          0deg,
+          rgba(255, 253, 242) 46.47%,
+          rgba(230, 222, 162, 0.5) 100%
+        );
+        /* z-index: 2000;
+        display: none; */
+      "
+    >
+      <div class="featurs">
+        <br /><br /><br />
+        <div style="text-align: left; margin-left: 6%">
+          <h1>Explore In Five Simple Steps</h1>
+        </div>
+        <br /><br />
+        <div
+          class="cards leagues"
+          style="
+            background: linear-gradient(
+              180deg,
+              rgba(60, 83, 153, 0.15) 0%,
+              rgba(97, 102, 18, 0.15) 46.47%,
+              rgba(53, 72, 139, 0.5) 100%
+            );
+          "
+        >
+          <!-- Creat Account -->
+          <img alt="logo" class="stakes2" src="./images/logo.png" />
+          <div class="stakes-price">
+            <br /><br />
+            <b class="icon" style="color: #4e7a97">Creat Account</b> <br />
+            <small class="matches_count">Active || matches</small>
+          </div>
+        </div>
+        <div
+          class="cards leagues"
+          style="
+            background: linear-gradient(
+              180deg,
+              rgba(60, 83, 153, 0.15) 0%,
+              rgba(97, 162, 68, 0.15) 46.47%,
+              rgba(0, 0, 0, 0.8) 100%
+            );
+          "
+        >
+          <!-- Get free 1,000 -->
+          <img alt="logo" class="stakes2" src="./images/logo.png" />
+          <div class="stakes-price">
+            <br /><br />
+            <b class="icon" style="color: #4e7a97">Get free 1,000</b> <br />
+            <small class="matches_count">Active || matches</small>
+          </div>
+        </div>
+        <div
+          class="cards leagues"
+          style="
+            background: linear-gradient(
+              180deg,
+              rgba(60, 83, 153, 0.15) 0%,
+              rgba(97, 162, 68, 0.15) 46.47%,
+              rgba(217, 44, 44, 0.6) 100%
+            );
+          "
+        >
+          <!-- Select Class -->
+          <img alt="logo" class="stakes2" src="./images/logo.png" />
+          <div class="stakes-price">
+            <br /><br />
+            <b class="icon" style="color: #4e7a97">Select Class</b> <br />
+            <small class="matches_count">Active || matches</small>
+          </div>
+        </div>
+        <div
+          class="cards leagues"
+          style="
+            background: linear-gradient(
+              180deg,
+              rgba(60, 83, 153, 0.15) 0%,
+              rgba(97, 162, 68, 0.15) 46.47%,
+              rgba(151, 151, 78, 0.9) 100%
+            );
+          "
+        >
+          <!-- Select Category -->
+          <img alt="logo" class="stakes2" src="./images/logo.png" />
+          <div class="stakes-price">
+            <br /><br />
+             <b class="icon" style="color: #4e7a97;"  >Select Category</b> <br /> 
+            <small class="matches_count">Active || matches</small>
+          </div>
+        </div>
+        <div
+          class="cards leagues"
+          style="
+            background: linear-gradient(
+              180deg,
+              rgba(97, 162, 68, 0.15) 46.47%,
+              rgba(87, 151, 78, 0.8) 100%
+            );
+          "
+        >
+          <!-- Predict All matches -->
+          <img alt="logo" class="stakes2" src="./images/logo.png" />
+          <div class="stakes-price">
+            <br /><br />
+            <b class="icon" style="color: #4e7a97" >Predict All matches</b>
+            <br />
+            <small class="matches_count" >Active || matches</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bookmaking section -->
+
+    <section class="bookmaking">
+      <div class="bookmaking-content">
+        <div class="left-image">
+          <img src="./images/ogapredictor.gif" alt="" />
+        </div>
+        <div class="right-text">
+          <h2>OgaPredictor</h2>
+          <h4>We Are Democratizing Football betting</h4>
+          <p>OgaPredictor App is a peer-to-peer betting platform. You deserve to have fun and win</p> <p>  money from predicting </p>
+             football matches.</p>
+          <p>
+            If you are certain that your prediction skill is good;
+             then we have created a </p> <p> platform that can help you win others
+          </p><br>
+          <h3>Win money from group bettings</h3> <br>
+          <h3>Win money from One-vs-One</h3><br>
+          <h3>Win huge rewards reward on our weekly jackpots</h3>
+          <br />
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- QUORSE SECTION -->
+    <section class="quorse">
+      <div class="content">
+        <div class="text">
+          <h2>More Fun, More Wins</h2>
+          <h4>Betting Has Never Been This Fun!</h4>
+          <p>
+            Be it group betting, One-on-One, or Jackpot, so many people must win some </p>
+            <p> money. This is not about you betting against a machine; This is about you </p>
+            <p> betting against real people. For each of your correct prediction, you are one </p>
+            <p>step closer to winning all the money at stake in a betting group, Ono-on-One or Jackpot.
+          </p>
+        
+        </div>
+        <div class="image">
+          <!-- <span>
+                        Choose Your Class
+                    </span> -->
+          <img src="./images/class.PNG" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ten years section -->
+    <section class="tenyears">
+      <div class="tenyears-content">
+        <div class="left-text-holder">
+          <h6>We are in this with you; so let's</h6>
+          <h3>Make Money.</h3>
+          <h4>It's time to SHOW YOUR POWER</h4>
+          <p>
+            We have heard enough of your bragging , it's now </p> 
+           <p>time to bring your prediction skills to the table.
+          </p>
+          <br /><br />
+          <!-- <a href="">Create Account</a> -->
+          <div class=" ">
+            
+          </div>
+        </div>
+        <div class="righttext-holder">
+          <div class="firstrow">
+            <div class="firsttext">
+              
+              <h6>Group Prediction</h6>
+              <p>The group betting is where 11 people</p>
+              <p>come together and predict matches in</p>
+              <p>the group based on win, draw, or loss.</p>
+              <p>Each person bets a particular amount for</p>  
+               <p>the games Each correct prediction earns</p>
+              <p>you 3 points The person who gets the  <br> highest score from the group wins all the money.</p>
+            </div>
+            <div class="secondtext">
+              
+              <h6>On On On Prediction</h6>
+              <p>This feature allows you to bet against</p>
+               <p>  another individual for a particular  </p> 
+                <p>game at a  particular amount. You are at </p>
+                  <p> liberty to set up a  challenge and stake  </p>  
+                  <p>an amount, then you can envy invite a </p>
+                  <p>friend to take up challenge.</p>
+            </div>
+          </div>
+          <div class="secondrow">
+            <div class="firsttext">
+              
+              <h6>Jackpot Prediction</h6>
+              <p>This is where your prediction skills can win </p> 
+                <p>a BIG reward. Companies, brands, and even </p>
+                <p> Ogapredictor can put up huge prices  </p> 
+                <p>(like Smart Phones, Cash, Cars, Cash,  </p>   
+                <p>Original Jerseys, Tickets, etc) for  </p> 
+                <p> one or more persons to win after  </p>
+                <p>predicting the games uploaded on </p>
+                <p> any active Jackpot.</p>
+            </div>
+            <div class="secondtext">
+              
+              <h6>Buzz My Wallet</h6>
+              <p>Your friends or other users of the</p> 
+              <p> Ogapredictor App can directly send</p> 
+              <p>  money from their wallets to yours.   </p>  
+              <p>You can also request money from    </p>   
+              <p>others on the app. So, when you </p>
+              <p>don't have just money  to predict, </p>   
+              <p>you can request money from  other users.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--customer section -->
+    <section class="customer" style="display: none">
+      <div class="customer-content">
+        <h6>10,000 Customers Trust Us</h6>
+        <h2>What They Are Saying</h2>
+        <p>
+          You can always get in touch with the developer via his forums and the
+          documentation gets you through the
+        </p>
+        <p>basics, its simple to set up and work with.</p>
+        <img src="./images/vlcsnap-2022-06-25-15h24m55s329.png" alt="" /> <br />
+        <p>Diane Koo</p>
+        <br />
+        <p><small>Illustrator</small></p>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div class="new-footer">
+      <br />
+      <p>Give us a feedback
+
+      </p>
+      <br />
+
+      <input type="email" placeholder="Talk to us" />
+      <button>Done</button>
+    </div>
+
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
